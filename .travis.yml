@@ -6,6 +6,6 @@ before_script:
   - rvm install "ruby-2.7.3"
   - rvm use 2.7.3
   - gem install bundler
-  - brew update && brew bundle --no-lock
+  - brew update
 script:
   - ruby -v
