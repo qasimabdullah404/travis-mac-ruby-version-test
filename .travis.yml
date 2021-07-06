@@ -5,7 +5,7 @@ language: objective-c
 before_script:
   - rvm install "ruby-2.7.3"
   - rvm use 2.7.3
-  - ruby -v
   - gem install bundler
   - brew update && brew bundle --no-lock
-script: true
+script:
+  - ruby -v
