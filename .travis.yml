@@ -1,0 +1,7 @@
+os: osx
+osx_image: xcode12.5
+language: objective-c
+
+script:
+  - rvm use 2.7.3
+  - ruby -v
