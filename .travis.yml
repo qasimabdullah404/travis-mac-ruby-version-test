@@ -2,10 +2,5 @@ os: osx
 osx_image: xcode12.5
 language: objective-c
 
-before_script:
-  - rvm install "ruby-2.7.3"
-  - rvm use 2.7.3
-  - gem install bundler
-  - brew update
 script:
   - ruby -v
