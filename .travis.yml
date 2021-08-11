@@ -1,6 +1,6 @@
 os: osx
 osx_image: xcode12.5
-language: objective-c
+language: swift
 
 script:
   - ruby -v
