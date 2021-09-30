@@ -4,6 +4,13 @@ os:
 osx_image:
 - xcode12.5
 
+addons:
+  homebrew:
+    packages:
+      - git-lfs
+      - doxygen
+      - dylibbundler
+    update: true
 install:
   - chmod +x ./scripts/install_macos.sh
   - ./scripts/install_macos.sh
