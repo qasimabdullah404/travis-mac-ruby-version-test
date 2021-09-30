@@ -13,14 +13,15 @@ addons:
     update: true
 
 env:
-  VULKAN_SDK_VER="1.2.176.1"
-  # This is just to tell the install script where to install.
-  VULKAN_INSTALL_DIR="$HOME/VulkanSDK/$VULKAN_SDK_VER"
-  VULKAN_SDK="$VULKAN_INSTALL_DIR/macOS"
-  DEPLOY_BUILD_DIR=build-macos-universal
-  MY_BUILD_ROOT=$HOME/build
-  VCPKG_ROOT="$MY_BUILD_ROOT/vcpkg"
-  VCPKG_INSTALL_ROOT="$MY_BUILD_ROOT/vcpkg_installed"
+  - global:
+    VULKAN_SDK_VER="1.2.176.1"
+    # This is just to tell the install script where to install.
+    VULKAN_INSTALL_DIR="$HOME/VulkanSDK/$VULKAN_SDK_VER"
+    VULKAN_SDK="$VULKAN_INSTALL_DIR/macOS"
+    DEPLOY_BUILD_DIR=build-macos-universal
+    MY_BUILD_ROOT=$HOME/build
+    VCPKG_ROOT="$MY_BUILD_ROOT/vcpkg"
+    VCPKG_INSTALL_ROOT="$MY_BUILD_ROOT/vcpkg_installed"
         
 install:
   - chmod +x ./scripts/install_macos.sh
