@@ -13,7 +13,7 @@ addons:
     update: true
 
 env:
-  - VULKAN_SDK_VER="1.2.176.1"
+  VULKAN_SDK_VER="1.2.176.1"
   # This is just to tell the install script where to install.
   VULKAN_INSTALL_DIR="$HOME/VulkanSDK/$VULKAN_SDK_VER"
   VULKAN_SDK="$VULKAN_INSTALL_DIR/macOS"
