@@ -21,4 +21,4 @@ install:
   - ./scripts/install_macos.sh
 
 script:
-  - ruby -v
+  - echo done
