@@ -4,5 +4,9 @@ os:
 osx_image:
 - xcode12.5
 
+install:
+  - chmod +x ./scripts/install_macos.sh
+  - ./scripts/install_macos.sh
+
 script:
   - ruby -v
