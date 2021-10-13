@@ -11,6 +11,9 @@ addons:
       - doxygen
       - dylibbundler
     update: true
+cache:
+  - $MY_BUILD_ROOT/vcpkg_installed
+  - $HOME/.cache/vcpkg
 
 env:
   global:
