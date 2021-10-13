@@ -12,8 +12,10 @@ addons:
       - dylibbundler
     update: true
 cache:
-  - $MY_BUILD_ROOT/vcpkg_installed
-  - $HOME/.cache/vcpkg
+  timeout: 1800
+  directories:
+    - $MY_BUILD_ROOT/vcpkg_installed
+    - $HOME/.cache/vcpkg
 
 env:
   global:
