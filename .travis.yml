@@ -14,8 +14,7 @@ addons:
 cache:
   timeout: 1800
   directories:
-    - $MY_BUILD_ROOT/vcpkg_installed
-    - $HOME/.cache/vcpkg
+    - $HOME/build/vcpkg_installed
 
 env:
   global:
